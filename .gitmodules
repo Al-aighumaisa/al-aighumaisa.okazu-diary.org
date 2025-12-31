@@ -1,0 +1,3 @@
+[submodule "okazu-diary"]
+	path = okazu-diary
+	url = https://github.com/Al-aighumaisa/okazu-diary.git
