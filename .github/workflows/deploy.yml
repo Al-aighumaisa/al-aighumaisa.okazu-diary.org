@@ -46,12 +46,16 @@ jobs:
         run: |
           pnpm install && pnpm build
         working-directory: okazu-diary/packages/api
+      - run: |
+          cp -R public okazu-diary/packages/web/
       - name: Build
         run: |
           pnpm install && pnpm build
         working-directory: okazu-diary/packages/web
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        # `upload-pages-artifact@v4` would discard the `.well-known` directory in `public`.
+        # https://github.com/actions/upload-pages-artifact/issues/129
+        uses: actions/upload-pages-artifact@v3
         with:
           path: okazu-diary/packages/web/build/client
       - name: Deploy to GitHub Pages
