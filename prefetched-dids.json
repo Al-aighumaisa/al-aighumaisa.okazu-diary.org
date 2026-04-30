@@ -1,0 +1,24 @@
+{
+  "did:plc:ljunxbzebevrkafxaiawfgof": {
+    "sig": "PMgNwo01hxWOnVKp2WUEVJm7Dt-Qvgu2vwhpoLJbKTAGc00KNP4mws_lG6Oa6UVbvZ4BLntld1V8FHlLi-sCLA",
+    "prev": "bafyreia6y7trwtxzhq2jdu6rf25lzvygjq4wrr3viufkkb4zdosrpj3o6i",
+    "type": "plc_operation",
+    "services": {
+      "atproto_pds": {
+        "type": "AtprotoPersonalDataServer",
+        "endpoint": "https://hygrophorus.us-west.host.bsky.network"
+      }
+    },
+    "alsoKnownAs": [
+      "at://al-aighumaisa.okazu-diary.org"
+    ],
+    "rotationKeys": [
+      "did:key:zQ3shwFzVM6neH7QTewwUVhB2Z1UySpFHse7JKyC8KQSjhpYZ",
+      "did:key:zQ3shhCGUqDKjStzuDxPkTxN6ujddP4RkEKJJouJGRRkaLGbg",
+      "did:key:zQ3shpKnbdPx3g3CmPf5cRVTPe1HtSwVn5ish3wSnDPQCbLJK"
+    ],
+    "verificationMethods": {
+      "atproto": "did:key:zQ3shZ7QmDQvNqxj9uLsxsRH6yw3q9SmPyyVxn6J5MWBTS3wZ"
+    }
+  }
+}

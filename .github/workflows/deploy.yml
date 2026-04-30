@@ -48,6 +48,7 @@ jobs:
         working-directory: okazu-diary/packages/api
       - run: |
           cp -R public okazu-diary/packages/web/
+          jq --compact-output . prefetched-dids.json > okazu-diary/packages/web/app/config/prefetched-dids.json
       - name: Build
         run: |
           pnpm install && pnpm build
